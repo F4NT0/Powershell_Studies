@@ -24,7 +24,7 @@ New-Item example.ps1
 * Depois abrimos esse arquivo em um editor de códigos, como o Visual Studio Code
 
 ```powershell
-code example.ps1
+code helloworld.ps1
 ```
 
 * Para enviar uma mensagem para o console pelo script iremos usar o comando $\color{lightblue}\cal{Write-Output}$
@@ -46,3 +46,18 @@ $name = Read-Host -Prompt "Please enter your name"
 ```powershell
 Write-Output "Congratulations $name! You have written your first code with PowerShell!"
 ```
+
+## Rodando o primeiro Script
+
+* Para rodar um projeto no Powershell, precisa abrir um Powershell como administrado e colocar o seguinte comando:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+* Depois feche o Powershell como administrador e abra um Powershell normal e rode o arquivo somente chamando o nome dele
+
+```powershell
+.\helloworld.ps1
+```
+
